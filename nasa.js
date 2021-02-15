@@ -9,7 +9,7 @@ let titleOfPic=document.querySelector("#titleOfimg");
 
 
 let reqData= new XMLHttpRequest();
-    reqData.open("GET", `https://api.nasa.gov/planetary/apod?api_key=8MPA5HdNgriAe4ogycoL2jsGcBfSFtfm01igpGwk`);
+    reqData.open("GET", `https://api.nasa.gov/planetary/apod?api_key=R8wCNifZUSdlZ9lLxPYFXIJSJs4yYx7mHV4LNuoh`);
     
     
     //tratar os dados antes de enviar a requisição//
@@ -52,7 +52,7 @@ dateForm.addEventListener("submit",function (event){
     event.preventDefault();
 
     let reqData= new XMLHttpRequest();
-    reqData.open("GET", `https://api.nasa.gov/planetary/apod?api_key=8MPA5HdNgriAe4ogycoL2jsGcBfSFtfm01igpGwk&date=${this.elements.day.value}`);
+    reqData.open("GET", `https://api.nasa.gov/planetary/apod?api_key=R8wCNifZUSdlZ9lLxPYFXIJSJs4yYx7mHV4LNuoh&date=${this.elements.day.value}`);
     
     
     reqData.onload= function (){
